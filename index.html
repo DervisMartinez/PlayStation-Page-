@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Web Developer </title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Playstation_Img/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Tecgnology</a></li>
+                </ul>
+            </nav>
+            <img src="Playstation_Img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>CSS 3<br>Curso</h2>
+                <h3>Diseño de paginas web bajo la modalidad hojas de estilo en cascada o CSS por sus siglas en ingles.<br>
+                En este curso Aprenderas todo lo relacionado a este Lenguaje de Programacion para diseñar la web</h3>
+            
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+                <button type="button">Start Course</button>
+            </div>
+            <div class="col-2">
+                <img src="Playstation_Img/ws7.png" class="controller">
+                <div class="color-box"></div> 
+                <div class="add-btn">
+                  <img src="Playstation_Img/add.png" >
+                  <p><small>Add to cart </small></p>
+                </div>
+            </div>
+        </div><br>
+        <div class="espec">
+        <section>
+                <img src="Playstation_Img/p2.png" class="refer">
+                
+            </section>
+        </div>
+        <div class="social-links">
+            <img src="Playstation_Img/fb.png" width="10px">
+            <img src="Playstation_Img/tw.png" width="20px">
+            <img src="Playstation_Img/ig.png" width="20px">
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight ="0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight =="0px")
+            {
+                menuList.style.maxHeight ="70%";
+            }
+            else
+               {
+                menuList.style.maxHeight ="0px";
+
+               }
+        }
+    </script>
+    <footer>
+       <a href="#" target="_blank" class="footer__copy-link"> &#169; DM. All right reserved</a>
+    </footer>
+</body>
+</html>
